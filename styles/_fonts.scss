@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Bold.eot');
+  src: url('../font/PublicSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/PublicSans-Bold.woff') format('woff'),
+      url('../font/PublicSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Medium.eot');
+  src: url('../font/PublicSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/PublicSans-Medium.woff') format('woff'),
+      url('../font/PublicSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Light.eot');
+  src: url('../font/PublicSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('../font/PublicSans-Light.woff') format('woff'),
+      url('../font/PublicSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('../font/PublicSans-Regular.eot');
+  src: url('../font/PublicSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/PublicSans-Regular.woff') format('woff'),
+      url('../font/PublicSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
