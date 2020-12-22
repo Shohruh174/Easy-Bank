@@ -100,8 +100,37 @@
 
 .wrap1 {
   background-color: #FAFAFA;
-  background-position: center;
+  background-position: top right;
   box-sizing: border-box;
+  background-size: 55% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/hero-bg.svg);
+  
+  @media only screen and (max-width: 576px) {
+    background-image: none;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mobile_bg {
+    display: none;
+    order: 1;
+    
+    @media only screen and (max-width: 576px) {
+      display: inline-block;
+      order: 1;
+      width: 100%;
+    }
+  }
+
+  .wrap1__right {
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
 
   @media only screen and (max-width: 576px) {
     box-sizing: border-box;
@@ -111,6 +140,7 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    max-width: 450px;
 
     @media only screen and (max-width: 576px) {
       display: flex;
@@ -122,37 +152,32 @@
 
     .wrap1__left {
       order: 1;
-
       @media only screen and (max-width: 576px) {
-        display: block;
+        display: inline;
         order: 2;
         text-align: center;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
     .wrap1__right {
       order: 2;
-      background-image: url(../images/wrap1__bg.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: cover;
-
       @media only screen and (max-width: 576px) {
-        display: block;
+        display: none;
         order: 1;
         margin-bottom: 45px;
         width: 100%;
         height: 100%;
       }
+    }
 
-      .top__img {
-        @media only screen and (max-width: 576px) {
-          width: 100%;
-          height: 100%;
-        }
+    .top__img {
+      position: absolute;
+      @media only screen and (max-width: 576px) {
+        display: none;
       }
-
     }
 
     .left_text {
@@ -533,6 +558,8 @@
         align-items: center;
 
         .icon {
+          fill: white;
+          transition: all ease 0.5s;
           &:hover {
             fill: #30C88F;
           }
